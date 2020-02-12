@@ -8,9 +8,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build-library": "ng build sharedLibrary && cd dist/shared-library && npm publish"
+    "e2e": "ng e2e"
   },
+  "files" : [
+  	"dist/angular-shared-library"
+  ],
   "private": false,
   "publishConfig": {
     "registry": "https://nexus.wideriver.co.uk/repository/npm-wideriver-ict-snapshots/"
