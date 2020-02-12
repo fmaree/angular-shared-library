@@ -11,7 +11,10 @@
     "e2e": "ng e2e",
     "build-library": "ng build sharedLibrary && cd dist/shared-library && npm publish"
   },
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "registry": "https://nexus.wideriver.co.uk/repository/npm-wideriver-ict-snapshots/"
+  },
   "dependencies": {
     "@angular/animations": "~8.2.14",
     "@angular/common": "~8.2.14",
