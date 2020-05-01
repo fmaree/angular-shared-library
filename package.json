@@ -7,10 +7,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-  "files" : [
-  	"/dist/angular-shared-library/"
+  "files": [
+    "/dist/angular-shared-library/"
   ],
   "private": false,
   "publishConfig": {
@@ -27,7 +29,8 @@
     "@angular/router": "~8.2.11",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
-    "zone.js": "^0.10.2"
+    "zone.js": "^0.10.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.12",
@@ -56,5 +59,6 @@
     "tsickle": "^0.37.0",
     "tslint": "~5.20.1",
     "typescript": "~3.5.3"
-  }
+  },
+  "snyk": true
 }
